@@ -41,7 +41,7 @@ void updateTopScores(const char *name, int score) {
 }
 
 void saveTopScoresToFile() {
-    FILE *file = fopen("wyniki.txt", "w");
+    FILE *file = fopen("scores.txt", "w");
     if (file == NULL) {
         perror("Failed to open wyniki.txt for saving.");
         return;
